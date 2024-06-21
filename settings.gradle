@@ -12,5 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "AndroidCLAID"
+
+rootProject.name = "CLAIDDemo"
 include ':app'

@@ -1,0 +1,15 @@
+{
+  "hosts": [
+    {
+      "hostname": "Smartphone",
+      "type": "android",
+      "isServer": false,
+      "min_log_severity_level": "WARNING",
+      "modules": [
+
+
+      ]
+    }
+
+  ]
+}
