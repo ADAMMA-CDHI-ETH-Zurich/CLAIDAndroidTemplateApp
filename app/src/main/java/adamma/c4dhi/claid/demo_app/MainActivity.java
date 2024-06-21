@@ -45,9 +45,6 @@ public class MainActivity extends Activity {
         tv.setText("Waiting for CLAID to start.");
 
         CLAID.onStarted(() -> tv.setText("CLAID has started!"));
-
-
-
     }
 
 }
