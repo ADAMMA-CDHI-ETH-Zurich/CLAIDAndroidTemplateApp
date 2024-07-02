@@ -2,14 +2,20 @@
   "hosts": [
     {
       "hostname": "Smartphone",
-      "type": "android",
       "isServer": false,
-      "min_log_severity_level": "WARNING",
       "modules": [
-
+        {
+          "type": "LocationSensorModule",
+          "id": "MyModule",
+          "output_channels": {"LocationChannel":  "LocationChannel"},
+          "properties":
+          {
+            "minTimeBetweenUpdatesMilliseconds": 1000,
+            "minDistanceBetweenUpdatesMeters": 2.0
+          }
+        }
 
       ]
     }
-
   ]
 }
