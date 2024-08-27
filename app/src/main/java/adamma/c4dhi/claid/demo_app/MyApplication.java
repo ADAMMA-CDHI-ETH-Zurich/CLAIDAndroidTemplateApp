@@ -33,13 +33,7 @@ public class MyApplication extends Application
     @Override
     public void onCreate() {
         super.onCreate();
-        CLAID.startInForeground(
-                getApplicationContext(),
-                "assets://claid_config.json",
-                "Smartphone",
-                "device",
-                "user",
-                CLAIDSpecialPermissionsConfig.almightyCLAID());
+
 
     }
 }

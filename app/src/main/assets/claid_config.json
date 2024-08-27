@@ -3,19 +3,7 @@
     {
       "hostname": "Smartphone",
       "isServer": false,
-      "modules": [
-        {
-          "type": "LocationSensorModule",
-          "id": "MyModule",
-          "output_channels": {"LocationChannel":  "LocationChannel"},
-          "properties":
-          {
-            "minTimeBetweenUpdatesMilliseconds": 1000,
-            "minDistanceBetweenUpdatesMeters": 2.0
-          }
-        }
 
-      ]
     }
   ]
 }

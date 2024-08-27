@@ -28,6 +28,8 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import adamma.c4dhi.claid.demo_app.databinding.ActivityMainBinding;
+import adamma.c4dhi.claid_android.Configuration.CLAIDPersistanceConfig;
+import adamma.c4dhi.claid_android.Configuration.CLAIDSpecialPermissionsConfig;
 import adamma.c4dhi.claid_platform_impl.CLAID;
 
 public class MainActivity extends Activity {
@@ -38,7 +40,14 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-
+        CLAID.startInBackground(
+                getApplicationContext(),
+                "assets://claid_config.json",
+                "Smartphone",
+                "device",
+                "user",
+                CLAIDSpecialPermissionsConfig.regularConfig(),
+                CLAIDPersistanceConfig.maximumPersistance());
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
