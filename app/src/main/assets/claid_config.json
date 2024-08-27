@@ -3,7 +3,7 @@
     {
       "hostname": "Smartphone",
       "isServer": false,
-
+      "modules": []
     }
   ]
 }
