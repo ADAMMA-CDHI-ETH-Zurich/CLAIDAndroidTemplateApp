@@ -42,6 +42,6 @@ dependencies {
     implementation 'androidx.work:work-runtime:2.9.0'
 
     //noinspection GradleDynamicVersion
-    api 'ch.claid:claid:0.6.2'
+    api 'ch.claid:claid:0.6.3'
 
 }
