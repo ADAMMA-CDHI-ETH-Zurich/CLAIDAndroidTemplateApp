@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
                 "Smartphone",
                 "device",
                 "user",
-                CLAIDSpecialPermissionsConfig.regularConfig(),
+                CLAIDSpecialPermissionsConfig.allStorageAccessConfig(),
                 CLAIDPersistanceConfig.maximumPersistance());
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

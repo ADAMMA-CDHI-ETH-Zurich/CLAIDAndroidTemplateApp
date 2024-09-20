@@ -2,8 +2,8 @@
   "hosts": [
     {
       "hostname": "Smartphone",
-      "isServer": false,
-      "modules": []
+      "modules": [
+      ]
     }
   ]
 }
