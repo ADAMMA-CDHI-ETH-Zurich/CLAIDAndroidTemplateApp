@@ -20,13 +20,10 @@
 ***************************************************************************/
 
 package adamma.c4dhi.claid.demo_app;
-
 import android.app.Application;
-
 import adamma.c4dhi.claid_android.Configuration.CLAIDPersistanceConfig;
 import adamma.c4dhi.claid_android.Configuration.CLAIDSpecialPermissionsConfig;
 import adamma.c4dhi.claid_platform_impl.CLAID;
-import adamma.c4dhi.claid_platform_impl.PersistentModuleFactory;
 
 public class MyApplication extends Application
 {
@@ -34,6 +31,14 @@ public class MyApplication extends Application
     public void onCreate() {
         super.onCreate();
 
-
+        CLAID.startInBackground(
+                getApplicationContext(),
+                "assets://claid_config.json",
+                "Smartphone",   // Host name
+                "my_user",       // Unique user id
+                "my_device",         // Device name
+                CLAIDSpecialPermissionsConfig.allStorageAccessConfig(),
+                CLAIDPersistanceConfig.maximumPersistance()
+        );
     }
 }

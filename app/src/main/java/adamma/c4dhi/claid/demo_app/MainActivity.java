@@ -40,14 +40,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        CLAID.startInBackground(
-                getApplicationContext(),
-                "assets://claid_config.json",
-                "Smartphone",
-                "device",
-                "user",
-                CLAIDSpecialPermissionsConfig.allStorageAccessConfig(),
-                CLAIDPersistanceConfig.maximumPersistance());
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
