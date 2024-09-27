@@ -33,10 +33,10 @@ public class MyApplication extends Application
 
         CLAID.startInBackground(
                 getApplicationContext(),
-                "assets://claid_config.json",
-                "Smartphone",   // Host name
-                "my_user",       // Unique user id
-                "my_device",         // Device name
+                "assets://claid_config.json", // Path to config file
+                "Smartphone",    // Host name
+                "user01",        // Unique user id
+                "my_device",     // Device name
                 CLAIDSpecialPermissionsConfig.allStorageAccessConfig(),
                 CLAIDPersistanceConfig.maximumPersistance()
         );

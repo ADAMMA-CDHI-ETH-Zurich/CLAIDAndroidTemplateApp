@@ -1,0 +1,3 @@
+repo_url=aa
+developer_name=
+developer_password=
