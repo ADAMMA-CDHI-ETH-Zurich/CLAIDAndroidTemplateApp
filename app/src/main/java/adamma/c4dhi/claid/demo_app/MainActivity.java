@@ -27,6 +27,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import adamma.c4dhi.claid.Schedule;
+import adamma.c4dhi.claid.SchedulePeriodic;
 import adamma.c4dhi.claid.demo_app.databinding.ActivityMainBinding;
 import adamma.c4dhi.claid_android.Configuration.CLAIDPersistanceConfig;
 import adamma.c4dhi.claid_android.Configuration.CLAIDSpecialPermissionsConfig;
